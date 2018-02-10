@@ -26,20 +26,20 @@ namespace WindowsFormsApplication
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //initilize students
+            //initialize students
             for (int i = 0; i < 9; i++)
             {
-                //initialise the array with numberOfstudents student object
+                //initialize the array with numberOfstudents student object
                 StudentList.Add(new Student("" + (i + 1))); //this is because studentId is declared as string
             }
 
             // bind the student datagrid to the arraylist
             dataGridView1.DataSource = StudentList;
 
-            //initilize groups
+            //initialize groups
             for (int i = 0; i < 4; i++)
             {
-                //initialise the array with numberOfGroups Group object
+                //initialize the array with numberOfGroups Group object
                 GroupList.Add(new Group("" + (i + 1))); //this is because GroupId is declared as string
                 ((Group)GroupList[i]).groupName = "groupID" + (i + 1);
             }
